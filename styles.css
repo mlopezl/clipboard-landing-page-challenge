@@ -1,174 +1,330 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
-:root{
-    --Green-500: hsl(171, 66%, 44%);
-    --Green-shadow: hsl(160, 68%, 36%);
-    --Blue-100: hsl(233, 100%, 69%);
-    --Blue-shadow: hsl(232, 65%, 58%);
-    --Gray-700: hsl(210, 10%, 33%);
-    --Gray-500: hsl(201, 11%, 66%);
-    --Gray-footer: hsl(220, 18%, 97%);
-    --White: hsl(0, 0%, 100%);
-    
+:root {
+  --Green-500: hsl(171, 66%, 44%);
+  --Green-hover: hsl(171, 66%, 44%, 0.8);
+  --Green-shadow: hsl(160, 68%, 36%);
+  --Blue-100: hsl(233, 100%, 69%);
+  --Blue-hover: hsl(233, 100%, 69%, 0.8);
+  --Blue-shadow: hsl(232, 65%, 58%);
+  --Gray-700: hsl(210, 10%, 33%);
+  --Gray-500: hsl(201, 11%, 66%);
+  --Gray-footer: hsl(220, 18%, 97%);
+  --White: hsl(0, 0%, 100%);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box  ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 18px;
+html {
+  font-size: 18px;
 }
 
-body{
-    font-family: "Bai Jamjuree", sans-serif;
+body {
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
-.container{
-    width: 100%;
-    background-image: url(./images/bg-header-mobile.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+.container {
+  width: 100%;
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero,
 .services,
-.footer{
-    width: 85vw;
-    height: 700px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 30px;
+.footer {
+  max-width: 550px;
+  width: 85vw;
+  height: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
 }
 
-.services{
-    height: auto;
-    gap: 100px;
+.services {
+  height: auto;
+  gap: 100px;
 }
 
-.footer{
-    width: 100%;
-    height: auto;
-    gap: 40px;
-    background-color: var(--Gray-footer);
-    padding: 60px 0px 60px 0px;
+.footer {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  gap: 40px;
+  background-color: var(--Gray-footer);
+  padding: 60px 0px 60px 0px;
 }
 
-.hero__logo{
-    width: 120px;
+.hero__logo {
+  width: 120px;
 }
 
-.hero__tittle,
+.hero__title,
 .services__title,
-.services__subtitle{
-    font-size: 1.5rem;
-    color: var(--Gray-700);
-    font-weight: 600;
+.services__subtitle {
+  font-size: 1.5rem;
+  color: var(--Gray-700);
+  font-weight: 600;
 }
 
 .hero__description,
-.services__description{
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--Gray-500);
-    line-height: 25px;
+.services__description {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--Gray-500);
+  line-height: 25px;
 }
 
 .service,
-.services__container{
+.services__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.services__container {
+  gap: 60px;
+}
+
+.subservices {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.subservices .service {
+  gap: 10px;
+}
+
+.services__subtitle {
+  font-size: 1.3rem;
+}
+
+.service__image {
+  width: 300px;
+}
+
+.services__icon {
+  width: 50px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buttons:last-child {
+  margin-bottom: 60px;
+}
+
+.download__button {
+  max-width: 320px;
+  width: 80vw;
+  height: 50px;
+  border-radius: 30px;
+  color: var(--White);
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.download__button--iOS {
+  background-color: var(--Green-500);
+  box-shadow: 0px 3px 1px var(--Green-shadow);
+  transition: background-color 300ms ease;
+}
+
+.download__button--iOS:hover {
+  background-color: var(--Green-hover);
+}
+
+.download__button--Mac {
+  background-color: var(--Blue-100);
+  box-shadow: 0px 3px 1px var(--Blue-shadow);
+  transition: background-color 300ms ease;
+}
+
+.download__button--Mac:hover {
+  background-color: var(--Blue-hover);
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.logos img {
+  width: 120px;
+}
+
+.footer__logo {
+  width: 50px;
+}
+
+.footer__menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__menu a {
+  color: var(--Gray-700);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 300ms ease;
+}
+
+.footer__menu a:hover {
+  color: var(--Green-500);
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__social svg {
+  width: 30px;
+  height: 30px;
+}
+
+.footer__social svg path {
+  fill: var(--Gray-700);
+  transition: fill 300ms ease;
+}
+
+.footer__social svg:hover path {
+  fill: var(--Green-500);
+  transition: fill 300ms ease;
+}
+
+@media (min-width: 700px) {
+  .container {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  .hero__logo {
+    margin: 50px 0px 50px 0px;
+  }
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__description {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    flex-direction: row;
+  }
+
+  .download__button {
+    max-width: 200px;
+  }
+
+  .services {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .service {
+    max-width: 500px;
+  }
+
+  .services__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .services-image__container {
+    width: 100%;
+  }
+
+  .services-image__container img {
+    width: 100%;
+  }
+
+  .subservices {
+    width: 100%;
+  }
+
+  .subservices .service {
+    width: 70%;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .services__container--workflow,
+  .logos {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .services__container--workflow .service {
+    width: 250px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px;
+  }
+
+  .footer__menu {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .footer__menu li:first-child {
+    order: 1;
+  }
+
+  .footer__menu li:nth-child(2) {
+    order: 5;
+  }
+
+  .footer__menu li:nth-child(3) {
+    order: 2;
+  }
+
+  .footer__menu li:nth-child(4) {
+    order: 5;
+  }
+
+  .footer__menu li:last-child {
+    order: 4;
+  }
 }
 
-.services__container{
-    gap: 60px;
+@media (min-width: 800px) {
+  .footer__menu {
+    width: 80%;
+  }
 }
 
-.services__subtitle{
-    font-size: 1.3rem;
-}
-
-.service__image{
-    width: 300px;
-}
-
-.services__icon{
-    width: 50px;
-}
-
-.buttons{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.buttons:last-child{
-    margin-bottom: 60px;
-}
-
-.download__button{
-    max-width: 320px;
-    width: 80vw;
-    height: 50px;
-    border-radius: 30px;
-    color: var(--White);
-    border: none;
-    font-size: 1rem;
-}
-
-.download__button--iOS{
-    background-color: var(--Green-500);
-    box-shadow: 0px 3px 1px var(--Green-shadow);
-}
-
-.download__button--Mac{
-    background-color: var(--Blue-100);
-    box-shadow: 0px 3px 1px var(--Blue-shadow);
-}
-
-.logos{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    margin: 20px 0px 20px 0px;
-}
-
-.logos img{
-    width: 120px;
-}
-
-.footer__logo{
-    width: 50px;
-}
-
-.footer__menu{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer__menu a{
-    color: var(--Gray-700);
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.footer__social{
-    display: flex;
-    gap: 20px;
-}
-
-.footer__social svg{
-    width: 30px;
-    height: 30px;
+@media (min-width: 1000px) {
+  .logos {
+    flex-wrap: nowrap;
+  }
 }

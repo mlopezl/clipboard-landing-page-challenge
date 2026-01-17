@@ -10,11 +10,9 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    
   </head>
   <body>
     <div class="container">
@@ -24,18 +22,18 @@
           alt="Clipboard logo image"
           class="hero__logo"
         />
-        <h1 class="hero__tittle">A history of everything you copy</h1>
+        <h1 class="hero__title">A history of everything you copy</h1>
         <p class="hero__description">
           Clipboard allows you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
         <section class="buttons">
           <button class="download__button download__button--iOS">
-          Download for iOS
-        </button>
-        <button class="download__button download__button--Mac">
-          Download for Mac
-        </button>
+            Download for iOS
+          </button>
+          <button class="download__button download__button--Mac">
+            Download for Mac
+          </button>
         </section>
       </section>
       <main class="services">
@@ -55,31 +53,33 @@
               class="service__image"
             />
           </div>
-          <article class="service">
-            <h3 class="services__subtitle">Quick Search</h3>
-            <p class="services__description">
-              Easily search your snippets by content, category, web address,
-              application, and more.
-            </p>
-          </article>
-          <article class="service">
-            <h3 class="services__subtitle">iCloud Sync</h3>
-            <p class="services__description">
-              Instantly saves and syncs snippets across all your devices.
-            </p>
-          </article>
-          <article class="service">
-            <h3 class="services__subtitle">Complete History</h3>
-            <p class="services__description">
-              Retrieve any snippets from the first moment you started using the
-              app.
-            </p>
-          </article>
+          <div class="subservices">
+            <article class="service">
+              <h3 class="services__subtitle">Quick Search</h3>
+              <p class="services__description">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </article>
+            <article class="service">
+              <h3 class="services__subtitle">iCloud Sync</h3>
+              <p class="services__description">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
+            </article>
+            <article class="service">
+              <h3 class="services__subtitle">Complete History</h3>
+              <p class="services__description">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </article>
+          </div>
         </section>
         <article class="service">
           <h2 class="services__title">Access Clipboard anywhere</h2>
           <p class="services__description">
-            Whether you’re on the go, or at your computer, you can access all
+            Whether you're on the go, or at your computer, you can access all
             your Clipboard snippets in a few simple clicks.
           </p>
           <div class="services-image__container">
@@ -93,12 +93,16 @@
         <article class="service">
           <h2 class="services__title">Supercharge your workflow</h2>
           <p class="services__description">
-            We’ve got the tools to boost your productivity.
+            We've got the tools to boost your productivity.
           </p>
         </article>
-        <section class="services__container">
+        <section class="services__container services__container--workflow">
           <article class="service">
-            <img src="./images/icon-blacklist.svg" alt="blacklists icon" class="service__icon"/>
+            <img
+              src="./images/icon-blacklist.svg"
+              alt="blacklists icon"
+              class="service__icon"
+            />
             <h3 class="services__subtitle">Create blacklists</h3>
             <p class="services__description">
               Ensure sensitive information never makes its way to your clipboard
@@ -106,14 +110,22 @@
             </p>
           </article>
           <article class="service">
-            <img src="./images/icon-text.svg" alt="Text icon" class="service__icon"/>
+            <img
+              src="./images/icon-text.svg"
+              alt="Text icon"
+              class="service__icon"
+            />
             <h3 class="services__subtitle">Plain text snippets</h3>
             <p class="services__description">
               Remove unwanted formatting from copied text for a consistent look.
             </p>
           </article>
           <article class="service">
-            <img src="./images/icon-preview.svg" alt="Preview icon" class="service__icon"/>
+            <img
+              src="./images/icon-preview.svg"
+              alt="Preview icon"
+              class="service__icon"
+            />
             <h3 class="services__subtitle">Sneak preview</h3>
             <p class="services__description">
               Quick preview of all snippets on your Clipboard for easy access.
@@ -134,16 +146,16 @@
           <h2 class="services__title">Clipboard for iOS and Mac OS</h2>
           <p class="services__description">
             Available for free on the App Store. Download for Mac and iOS, sync
-            with iCloud and you’re ready to start adding to your clipboard.
+            with iCloud and you're ready to start adding to your clipboard.
           </p>
           <section class="buttons">
-          <button class="download__button download__button--iOS">
-          Download for iOS
-        </button>
-        <button class="download__button download__button--Mac">
-          Download for Mac
-        </button>
-        </section>
+            <button class="download__button download__button--iOS">
+              Download for iOS
+            </button>
+            <button class="download__button download__button--Mac">
+              Download for Mac
+            </button>
+          </section>
         </article>
       </main>
       <footer class="footer">
