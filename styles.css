@@ -145,8 +145,11 @@ body {
   transition: background-color 300ms ease;
 }
 
-.download__button--iOS:hover {
+.download__button--iOS:hover,
+.download__button--iOS:focus {
   background-color: var(--Green-hover);
+  border: none;
+  outline: none;
 }
 
 .download__button--Mac {
@@ -155,8 +158,11 @@ body {
   transition: background-color 300ms ease;
 }
 
-.download__button--Mac:hover {
+.download__button--Mac:hover,
+.download__button--Mac:focus {
   background-color: var(--Blue-hover);
+  border: none;
+  outline: none;
 }
 
 .logos {
@@ -189,8 +195,10 @@ body {
   transition: color 300ms ease;
 }
 
-.footer__menu a:hover {
+.footer__menu a:hover,
+.footer__menu a:focus {
   color: var(--Green-500);
+  outline: none;
 }
 
 .footer__social {
@@ -206,6 +214,14 @@ body {
 .footer__social svg path {
   fill: var(--Gray-700);
   transition: fill 300ms ease;
+}
+
+.footer__social a:focus{
+  outline: none;
+}
+
+.footer__social a:focus path{
+  fill: var(--Green-500);
 }
 
 .footer__social svg:hover path {
